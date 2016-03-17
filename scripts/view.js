@@ -126,7 +126,6 @@
 		var cellIndex = parseInt(cell.dataset.cellIndex);
 		var checkResult = this._sapperController.checkCell(rowIndex, cellIndex);
 
-		
 		switch(checkResult){
 			case 0:
 				this._openArea(rowIndex, cellIndex);
@@ -150,7 +149,7 @@
 	}
 
 	SupperView.prototype._rightMousClickHendler = function(cell){
-		if(this._sapperController.flagsCount===0){
+		if(this._sapperController.flagsCount===0 && !cell.classList.contains("marked")){
 			return;
 		}
 
