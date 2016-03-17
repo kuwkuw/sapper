@@ -1,0 +1,107 @@
+body{
+	text-align: center;
+}
+
+#game-container{
+	display: inline-block;
+}
+
+#game-menu-wrp{
+	/*position: relative;*/
+	padding: 5px;
+	background: #d7d8de;
+	/*height: 30px; */
+
+}
+
+#flag-count{
+	    display: inline-block;
+    /* position: absolute; */
+    /* left: 10px; */
+    /* width: 20%; */
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+#game-timer{
+	display: inline-block;
+    /* position: absolute; */
+    /* left: 10px; */
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+
+.game-restart-btn-wrp{
+    display: inline-block;
+    width: 60%;
+    /*padding: 9px;*/
+    /*box-sizing: border-box;*/
+}
+#game-restart-btn{
+    vertical-align: bottom;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/smile.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#game-field{
+    display: inline-block;
+}
+
+.game-row{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    /*margin-bottom: -4px;*/
+}
+.game-cell{
+	height: 20px;
+	width: 22px;
+	background: #d7d8de;
+	display: inline-block;
+	box-sizing: border-box;
+	/*margin-right: -4px;*/
+	vertical-align: top;
+}
+
+.unchecked, #game-menu-wrp, #game-restart-btn{
+	border-top: 2px solid #fcfcfc;
+	border-left: 2px solid  #fcfcfc;
+	border-right: 2px solid #898a8c;
+	border-bottom: 2px solid#898a8c;
+}
+
+.checked{
+	border: 1.5px solid #898a8c;
+}
+.mined{
+	background-color: red;
+	background-image: url(../img/mine.png);
+	background-size: 20px 20px;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+
+.marked{
+	background-image: url(../img/flag.png);
+	background-size: 20px 20px;
+}
+
+.border{
+	height: 35px;
+	position: relative;
+	background: #d7d8de;
+	border-top: 2px solid #898a8c;;
+	border-left: 2px solid  #898a8c;
+	border-right: 2px solid #fcfcfc;
+	border-bottom: 2px solid#fcfcfc
+}
+
+.highlight{
+	background:#e5e6ea;
+}

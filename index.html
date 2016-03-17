@@ -3,19 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sapper</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-	<div id="game-field">
-		<ul class="game-row">
-			<li class="game-cell"></li>
-			<li class="game-cell"></li>
-			<li class="game-cell"></li>
-		</ul>
-		<ul class="game-row">
-			<li class="game-cell"></li>
-			<li class="game-cell"></li>
-			<li class="game-cell"></li>
-		</ul>
+	<div id="game-container">
+		<div id="game-menu-wrp">
+			<div class="border">
+				<span id="flag-count">10</span>
+				<div class="game-restart-btn-wrp">
+					<span id="game-restart-btn"></span>
+				</div>				
+				<span id="game-timer">0:00</span>
+			</div>			
+		</div>
+		<div id="game-field">
+			<!-- <ul class="game-row">
+				<li class="game-cell unchecked"></li>
+				<li class="game-cell checked"></li>
+				<li class="game-cell"></li>
+			</ul>
+			<ul class="game-row">
+				<li class="game-cell"></li>
+				<li class="game-cell"></li>
+				<li class="game-cell"></li>
+			</ul> -->
+		</div>		
 	</div>
+	<script src="./scripts/view.js"></script>
+	<script src="./scripts/controller.js"></script>
+	<script>
+		var view = new window.SupperView(document.querySelector("#game-container"));
+	</script>
 </body>
 </html>

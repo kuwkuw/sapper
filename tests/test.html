@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf-8">
-
+	<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
   <!-- подключаем стили Mocha, для отображения результатов -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
   <!-- подключаем библиотеку Mocha -->
@@ -17,6 +17,7 @@
   <!-- в chai есть много всего, выносим assert в глобальную область -->
   <script>
     var assert = chai.assert;
+    var expect = chai.expect;
   </script>
 </head>
 
@@ -24,7 +25,8 @@
 
 
 
-  <!-- в этом скрипте находятся спеки -->
+  <script src="../scripts/view.js"></script>
+  <script src="../scripts/controller.js"></script>
   <script src="test.js"></script>
 
   <!-- в элементе с id="mocha" будут результаты тестов -->
